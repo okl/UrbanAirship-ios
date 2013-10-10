@@ -102,6 +102,7 @@
 
 - (void)cancelConnectionOnMainThread {
     [self.connection cancel];
+	[self setIsFinished:YES];
 }
 
 - (void)cancel {
